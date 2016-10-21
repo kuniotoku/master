@@ -1,0 +1,170 @@
+\documentclass[12pt,a4paper,titlepage]{book}
+\usepackage{ifthen}
+%<settings>
+\newcommand{\titleofthesis}{サイクロイド型ソリトン格子のダイナミクス}%title
+\newcommand{\authorfirstname}{邦夫}%first name
+\newcommand{\authorlastname}{徳宿}%last name
+\newcommand{\affiliation}{東京大学理学研究科物理学専攻}%affiliation
+\newcommand{\submissionyear}{2017}%year
+\newcommand{\submissionmanth}{January}%manth
+\newcommand{\version}{0.0}%version
+\newboolean{flatfilemode}
+\newcommand{\br}{\bm{r}}
+\newcommand{\bk}{\bm{k}}
+\newcommand{\bq}{\bm{q}}
+\newcommand{\bz}{Brillouin zone}
+\newcommand{\sro}{Sr$_2$RuO$_4$}
+\newcommand{\ea}{$et \ al.$}
+\setboolean{flatfilemode}{false}%true makes mergin adequate for filing
+\newboolean{manuscriptmode}
+\setboolean{manuscriptmode}{true}%false makes header adequate for submission
+%</settings>
+
+%<layout>
+\setlength{\topmargin}{0mm}
+\setlength{\textheight}{22cm}
+\setlength{\textwidth}{15.92cm}
+\ifflatfilemode
+\setlength{\oddsidemargin}{14pt}
+\setlength{\evensidemargin}{-14pt}
+\else
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{-0pt}
+\fi
+%</layout>
+
+%<header>
+\usepackage{fancyhdr}
+\usepackage{braket}
+\usepackage{indentfirst}
+\pagestyle{fancy}
+\ifmanuscriptmode
+\rhead{}
+\lhead{{\tt [修士論文]}}
+\else
+\rhead{}
+\lhead{{\tt [修士論文]}}
+\fi
+%</header>
+
+%<other_settings>
+% setting for eqnarray
+\setlength{\arraycolsep}{0.5mm}
+% setting for figure caption
+\usepackage[small]{caption}
+\setlength{\captionmargin}{40pt}
+%</other_settings>
+
+%<other_packages>
+\usepackage{amsmath,amssymb,bm}
+%\usepackage{pdfsync}
+\usepackage{graphicx}
+\usepackage[usenames]{color}
+%</ohter_packages>
+
+
+
+\begin{document}
+\begin{titlepage}
+ \begin{center}
+  
+ \end{center}
+ \vspace{3cm}
+ \begin{center}
+  {\tt {\Large 修士論文}}
+ \end{center}
+ \vspace{1cm}
+ \begin{center}
+  {\bf {\tt {\LARGE \titleofthesis}}}
+ \end{center}
+ \vspace{2cm}
+ \begin{center}
+  {\Large {\tt \submissionmanth, \submissionyear}}
+ \end{center}
+ \vspace{4cm}
+ \begin{center}
+  {\Large \authorlastname~{\sc \authorfirstname}}
+ \end{center}
+ \begin{center}
+  {\large {\it \affiliation}}
+ \end{center}
+\end{titlepage}
+\newpage
+\thispagestyle{empty} 
+
+\frontmatter
+%\input{acknowledge.tex}
+\chapter{謝辞} 
+ありがとう
+
+
+\tableofcontents
+
+\mainmatter
+%\input{abst.tex}
+
+%\part{}
+%testtest
+%\input{part1chap1.tex}
+\chapter{概要}
+
+\chapter{イントロダクション}
+\section{ジャロシンスキー守谷相互作用} 
+\section{電気磁気効果}
+\section{界面におけるDM}
+
+\chapter{サイクロイド型磁性体と楕円関数}
+\section{電流駆動}
+\section{ラグランジアンの構成}
+\section{二つのゲージの選択}
+\section{SU(2)ゲージ}
+\section{hopping}
+
+\chapter{まとめ}
+
+
+%\part{Appendix}i
+%\input{part2chap1.tex}
+\appendix
+\chapter{アペンディックス1}
+
+
+\backmatter
+%<bibtex>
+%\bibliographystyle{bibtexstylefile}
+%\bibliography{bibtexfile}
+%</bibtex>
+\begin{thebibliography}{99}
+ \bibitem{TI_ex} X. L. Qi, and S. C. Zhang, Rev. Mod. Phys. \textbf{83}, 1057 (2011).
+ \bibitem{M} T. Moriya, and T. Miyadai, Solid State Commun. \textbf{42}, 209 (1982).
+ \bibitem{hirsch} J. E. Hirsch, Phys. Rev. Lett. \textbf{83}, 1834 (1999).
+ \bibitem{sj} L. Berger, Phys. Rev. B,  \textbf{2}, 4559 (1970).
+ \bibitem{murakami} S. Murakami, N. Nagaosa, and S. C. Zhang, Science. \textbf{301} 1348 (2003).  
+ \bibitem{KL} R. Karplus, and J. M. Luttinger, Phys. Rev.\textbf{95} 1154 (1954).
+ \bibitem{kato} Y. K. Kato, R. C. Myers, A. C. Gossard, and D. D. Awschalom, Science. \textbf{306}, 1910 (2004). 
+ \bibitem{sinova} J. Sinova, D. Culceer, Q. Niu, N. A. Sinitsyn, T. Jungwirth, and A. H. Macdonald, Phys. Rev. Lett. \textbf{92}, 126603 (2004).
+ \bibitem{KM} C. L. Kane, and E. J. Mele, Phys. Rev. Lett. \textbf{95}, 226801 (2005).
+ \bibitem{BHZ} B. A. Bernevig, , T. L. Hughes, and S. C. Zhang, Science. \textbf{314}, 1757 (2006).
+ \bibitem{pt_ex} T. Kimura, Y. Otani, T. Sato, S. Takahashi, and S. Maekawa, Phys. Rev. Lett. \textbf{98}, 156601 (2007).
+  \bibitem{kontani_pt} T. Tanaka, H. Kontani, M. Naito, D. S. Hirashima, K. Yamada, and J. Inoue, Phys. Rev. B. \textbf{77}, 165117 (2008).
+ \bibitem{kontani_tm} H. Kontani, T. Tanaka, D. S. Hirashima, K. Yamada, and J. Inoue, Phys. Rev. Lett. \textbf{100}, 096601 (2008).
+ \bibitem{yanase_sro} Y. Yanase, J. Phys. Soc. Jpn. \textbf{82}, 044711 (2013). 
+ \bibitem{otani} K. Fujiwara, Y. Fukuma, J. Matsuno, H. Idzuchi, Y. Niimi, Y.Otani, and H. Takagi, arXiv:1307.2121 (2013). 
+ \bibitem{shitade} A. Shitade, H. Katsura, J. Kune\v{s}, X. L. Qi, S. C. Zhang, and N. Nagaosa, Phys. Rev. Lett. \textbf{102}, 256403 (2009).
+ \bibitem{Fuseya} Y. Fuseya, M. Ogata, and H. Fukuyama, J. Phys. Soc. Jpn. \textbf{81}, 093704 (2012). 
+ \bibitem{kontani_ahe} H. Kontani, T. Tanaka, and K. Yamada, Phys. Rev. B. \textbf{75}, 184416 (2007).
+ \bibitem{streda} P. St\v{r}eda, J. Phys. C: Solid State Phys. \textbf{15}, L717 (1982).
+  \bibitem{rashba_bychkov} Y. A. Bychkov, and E. I. Rashba, J. Phys. C. \textbf{17}, 6039 (1984).
+  \bibitem{DH} G. Dresselhaus, Phys. Rev. \textbf{100}, 580 (1955).
+  \bibitem{inoue} J. Inoue, G. E. W. Bauer, and L. W. Molenkamp, Phys. Rev. B. \textbf{70}, 041303 (2004).
+  \bibitem{yanase_kotai} Y. Yanase, and H. Harima, Kotai-butsuri \textbf{47}, 101 (2012)(in Japanese).
+  \bibitem{winkler} R. Winkler, {\it{Spin-orbit Coupling Effects in Two-Dimensional Electron and Hole Systems}}, Springer, (2003).
+  \bibitem{sro_kyousyou} S. Kittaka, S. Fusanobori, S. Yonezawa, H. Yamaguchi, Y.Maeno, R. Fittipaldi, and A. Vecchione, Phys. Rev. B. \textbf{77}, 214511 (2008).
+ \bibitem{yanase_ogata} Y. Yanase, and M. Ogata, J. Phys. Soc. Jpn. \textbf{72}, 673 (2003).
+ \bibitem{arakawa} N. Arakawa, and M. Ogata, Phys. Rev. B. \textbf{87}, 195110 (2013).
+ \bibitem{spincurrent_1} A. Vernes, B. L. Gr\"{o}rffy, and P. Weinberger, Phys. Rev. B. \textbf{76}, 012408 (2007).
+ \bibitem{spincurrent_2}S. Lowitzer, D. K\"{o}dderitzsch, and H. Ebert, Phys. Rev. B. \textbf{82}, 140402 (2010).
+ \bibitem{TKNN} D. J. Thouless, M. Kohmoto, M. P. Nightingale, and M. den Nijs, Phys. Rev. Lett. \textbf{49}, 405 (1982).
+ \bibitem{maeno} A. P. Mackenzie, and Y. Maeno, Rev. Mod. Phys. \textbf{75}, 657 (2003). \end{thebibliography}
+
+\end{document}
